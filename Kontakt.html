@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohrab-Gamer</title>
+	<link rel="stylesheet" href="sohrab.ahadzada.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <header>
+	  <nav class="navbar">
+	    <a href="index.html" class="logo">Sohrab-Gamer<span>.</span></a>
+		<ul class="menu-links">
+		  <span id="close-menu-btn" class="material-icons">close</span>
+		  <a href="Startseite.html">Startseite</a>
+		  <a href="Youtube.html">Youtube</a>
+		  <a href="Twitch.html">Twitch</a>
+		  <a href="Youtube Videos.html">Youtube Videos</a>
+		  <a href="Kontakt.html">Kontakt</a>
+		  <a href="Login.html">
+			<button class="btnLogin-popup">Anmeldung</button>
+		  </a>
+        <span id="menu-btn" class="material-icons">menu</span>		
+	  </nav>
+	</header>
+	
+	<section class="hero-section">
+	<div class="content">
+	  <h1>Kontakt</h1>
+	  <p>
+	    <h3>Hier seht ihr meine Kontaktdaten:<br> 
+		    <br>E-mail: sohrabgameryt@hotmail.com</br>
+			<br>Fals ihr Fragen habt schreibt mir gerne.</br>
+			</br></h3>
+	  </p>
+	  <button>Mich Kontaktieren</button>
+	</div>
+	</section>
+	
+	<script>
+	  const header = document.querySelector("header");
+	  const menuBtn = document.querySelector("#menu-btn");
+	  const closeMenuBtn = document.querySelector("#close-menu-btn");
+	  
+	  menuBtn.addEventListener("click", () => {
+	    header.classList.toggle("show-mobile-menu");
+	  });
+
+      closeMenuBtn.addEventListener("click", () => {
+	    menuBtn.click();
+	  }); 	  
+	</script>
+  </body>
+</html>

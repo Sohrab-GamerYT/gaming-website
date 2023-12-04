@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohrab-Gamer</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  <header>
+	  <nav class="navbar">
+	    <a href="index.html" class="logo">Sohrab-Gamer<span>.</span></a>
+		<ul class="menu-links">
+		  <span id="close-menu-btn" class="material-icons">close</span>
+		  <a href="Startseite.html">Startseite</a>
+		  <a href="Youtube.html">Youtube</a>
+		  <a href="Twitch.html">Twitch</a>
+		  <a href="Youtube Videos.html">Youtube Videos</a>
+		  <a href="Kontakt.html">Kontakt</a>
+		  <a href="Login.html">
+			<button class="btnLogin-popup">Anmeldung</button>
+		  </a>
+		</ul>
+        <span id="menu-btn" class="material-icons">menu</span>		
+	  </nav>
+	</header>
+ 
+      <div class="login-box">
+		  <form action="#">
+		      <input type="checkbox" class="input-check" id="input-check">
+			  <label for="input-check" class="toggle">
+			      <span class="text off">Aus</span>
+			      <span class="text on">An</span>
+			  </label>
+		      <div class="login-light"></div>
+			  
+		      <h2>Anmeldung</h2>
+			  <div class="input-box">
+			      <span class="icon"><ion-icon name="mail"></ion-icon></span>
+				  <input type="email"required>
+				  <label>Email</label>
+				  <div class="input-line"></div>
+		  </div>
+		  <div class="input-box">
+			  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+			  <input type="password"required>
+			  <label>Passwort</label>
+			  <div class="input-line"></div>
+		  </div>
+		  <div class="remember-forgot">
+		      <label><input type="checkbox"> Speichern</label>
+			  <a href="#">Passwort vergessen?</a>
+		  </div>
+          <button type="submit">Anmelden</button>
+          <div class="register-link">
+              <p>Kein Account? <a href="#">Registrieren</a></p>
+          </div>			  
+	  </form>
+  </div>
+ 
+  <script>
+	  const header = document.querySelector("header");
+	  const menuBtn = document.querySelector("#menu-btn");
+	  const closeMenuBtn = document.querySelector("#close-menu-btn");
+	  
+	  menuBtn.addEventListener("click", () => {
+	    header.classList.toggle("show-mobile-menu");
+	  });
+
+      closeMenuBtn.addEventListener("click", () => {
+	    menuBtn.click();
+	  }); 	  
+	</script>
+	
+	 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  </body>
+</html>
